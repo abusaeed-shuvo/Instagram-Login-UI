@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/instagramDarkPink"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="Instagram Logo"
+        android:src="@drawable/instagram" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:background="@color/offWhite"
+        android:drawableStart="@drawable/email"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="15dp"
+        android:background="@color/offWhite"
+        android:drawableStart="@drawable/lock"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_margin="15dp"
+        android:text="Forgot Password"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/indigo"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="15dp"
+        android:text="Don't have an account? Signup!"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
